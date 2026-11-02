@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" styleClass="ventana"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.VentasController">
+
+    <Label text="Ventas realizadas" styleClass="titulo"/>
+
+    <TableView fx:id="tablaVentas" prefHeight="280">
+        <columns>
+            <TableColumn fx:id="colFecha" text="Fecha" prefWidth="130"/>
+            <TableColumn fx:id="colCodigo" text="Código" prefWidth="80"/>
+            <TableColumn fx:id="colProducto" text="Producto" prefWidth="200"/>
+            <TableColumn fx:id="colCantidad" text="Cant." prefWidth="60"/>
+            <TableColumn fx:id="colTotal" text="Total" prefWidth="110"/>
+        </columns>
+    </TableView>
+
+    <Label fx:id="lblTotal" styleClass="total"/>
+</VBox>

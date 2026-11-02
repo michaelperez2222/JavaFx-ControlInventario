@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" styleClass="ventana"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.PrincipalController">
+
+    <Label text="Control de Inventario y Ventas" styleClass="titulo"/>
+
+    <HBox spacing="8">
+        <TextField fx:id="txtCodigo" promptText="Código" prefWidth="90"/>
+        <TextField fx:id="txtNombre" promptText="Nombre" prefWidth="200"/>
+        <TextField fx:id="txtPrecio" promptText="Precio" prefWidth="90"/>
+        <TextField fx:id="txtCantidad" promptText="Cantidad" prefWidth="90"/>
+        <Button text="Registrar producto" onAction="#registrarProducto"/>
+    </HBox>
+
+    <TableView fx:id="tabla" prefHeight="260">
+        <columns>
+            <TableColumn fx:id="colCodigo" text="Código" prefWidth="90"/>
+            <TableColumn fx:id="colNombre" text="Nombre" prefWidth="230"/>
+            <TableColumn fx:id="colPrecio" text="Precio" prefWidth="110"/>
+            <TableColumn fx:id="colCantidad" text="Cantidad" prefWidth="90"/>
+            <TableColumn fx:id="colValor" text="Valor total" prefWidth="130"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="8">
+        <Label text="Cantidad a vender:"/>
+        <TextField fx:id="txtVenta" prefWidth="80"/>
+        <Button text="Vender" onAction="#vender" styleClass="venta"/>
+        <Button text="Ver ventas" onAction="#verVentas"/>
+    </HBox>
+</VBox>

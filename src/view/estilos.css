@@ -1,0 +1,35 @@
+.ventana {
+    -fx-padding: 15;
+    -fx-background-color: #f4f6f8;
+}
+
+.titulo {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #19293a;
+}
+
+.total {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #11a850;
+}
+
+.button {
+    -fx-background-color: #2980b9;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #1f6391;
+}
+
+.venta {
+    -fx-background-color: #16c05d;
+}
+
+.venta:hover {
+    -fx-background-color: #16c05d;
+}
